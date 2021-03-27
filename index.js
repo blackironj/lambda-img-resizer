@@ -6,7 +6,7 @@ exports.handler = async (event, context, callback) => {
     //TODO: check JSON body param whether is right
     console.log('Received event:', JSON.stringify(event, null, 2));
 
-    const srcKey = event.srckey;
+    const srcKey = event.srcKey;
     const srcBucket = event.srcBucket;
     const sanitizedSrcKey = srcKey.replace(/\+/g, " ");
 
